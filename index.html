@@ -30,7 +30,7 @@
             </div>
       </div>
   <!-- Inicio Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top d-flex">
         <a class="navbar-brand" href="index.html">
           <img src="img/home.svg" width="30" height="30" class="d-inline-block align-top" alt="inicio">
           Anthony's
@@ -38,7 +38,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse mr-auto" id="navbarNav">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active mr-4 ml-4">
                 <a class="nav-link dropdown-toggle" href="#" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,14 +70,14 @@
                 </div>
               </li>
             </ul>
-            <a class="mr-2" href="">
-              <img src="img/user-solid.svg" width="20" height="20" class="d-inline-block align-top" alt="log-in">
+            <a class="mr-4" href="logIn.html">
+              <img src="img/user-solid.svg" width="20" height="20" class="d-inline-block align-top" alt="log-in" data-toggle="tooltip" data-placement="bottom" title="LogIn">
             </a>
             <a class="mr-4" href="shoppingCart.html">
-              <img src="img/shopping-cart-solid.svg" width="20" height="20" class="d-inline-block align-top" alt="carrito-compra">
+              <img src="img/shopping-cart-solid.svg" width="20" height="20" class="d-inline-block align-top" alt="carrito-compra" data-toggle="tooltip" data-placement="bottom" title="Carrito de la compra">
             </a>
-            <form class="form-inline my-md-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline my-md-2 my-lg-0 xs-justify-content-center">
+              <input class="form-control mr-sm-2 mr-md-3" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
@@ -153,8 +153,8 @@
           <p class="grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit fugit, error amet numquam iure provident voluptate esse quasi nostrum quisquam eum porro a pariatur veniam.</p>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-8">
-                <div class="jumbotron">
+              <div class="col-md-12">
+                <div class="jumbotron text-white">
                   <h2>
                     Hello, world!
                   </h2>
@@ -164,21 +164,6 @@
                   <p>
                     <a class="btn btn-primary btn-large" href="#">Learn more</a>
                   </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card bg-default">
-                  <h5 class="card-header">
-                    Card title
-                  </h5>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Card content
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    Card footer
-                  </div>
                 </div>
               </div>
             </div>
@@ -565,9 +550,9 @@
         </ul>
       </div>
       <!-- Grid column -->
-      <hr class="clearfix w-100 d-md-none">
+      <hr class="clearfix d-md-none">
       <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 text-center mx-auto my-4 border-right">
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
         <!-- Social buttons -->
         <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
 
@@ -610,6 +595,14 @@ integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifw
 <script>
   $(document).ready(function(){
     $("#frameModalTopInfoDemo").modal("toggle");
+  });
+
+  $('.carousel-example-2').carousel({
+    touch: true
+  });
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
   });
 </script>
 </body>
