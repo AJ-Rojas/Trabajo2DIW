@@ -8,7 +8,7 @@ En este proyecto podremos comprar muebles de todo tipos. El diseño del proyecto
 ## Funcionalidades 🔧
 
 En este proyecto las unicas partes que funcionan son (Carrito de la compra, inicio y Producto), este último para poder visualizar como se verían
-los detalles del producto clickariamos en el producto "Mueble Tv".
+los detalles del producto clickariamos en el producto "Mueble Tv" que se encuentra en la página principal justamente debajo del jumbotron
 
 
 ## Construido con :hammer:
