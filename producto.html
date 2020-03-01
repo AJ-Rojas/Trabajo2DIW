@@ -26,10 +26,15 @@
                   Productos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">vhuk</a>
-                  <a class="dropdown-item" href="#">Another</a>
-                  <a class="dropdown-item" href="#">Something</a>
-                </div>
+                    <a class="dropdown-item" href="#">Muebles tv</a>
+                    <a class="dropdown-item" href="#">Armarios</a>
+                    <a class="dropdown-item" href="#">Mesas</a>
+                    <a class="dropdown-item" href="#">Sillas</a>
+                    <a class="dropdown-item" href="#">Divanes</a>
+                    <a class="dropdown-item" href="#">Baldas</a>
+                    <a class="dropdown-item" href="#">Menaje</a>
+                    <a class="dropdown-item" href="#">Textiles del hogar</a>
+                  </div>
               </li>
               <li class="nav-item mr-4 ml-4">
                 <a class="nav-link" href="#">Estancias</a>
@@ -40,15 +45,9 @@
               <li class="nav-item mr-4 ml-4">
                 <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Inspiración</a>
               </li>
-              <li class="nav-item dropdown mr-4 ml-4">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ofertas
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+              <li class="nav-item mr-4 ml-4">
+                <a class="nav-link" href="#" aria-disabled="true">Ofertas</a>
+              </li>
               </li>
             </ul>
             <a class="mr-4" href="logIn.html">
@@ -63,13 +62,12 @@
             </form>
           </div>
       </nav>
-    <div class="container mt-5 pt-3">
+    <div class="container mt-5 pt-5">
         <div class="row">
             <div class="col">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item"><a href="#">Category</a></li>
                         <li class="breadcrumb-item"><a href="#">Productos</a></li>
                         <li class="breadcrumb-item"><a href="#">Muebles TV</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Kesia</li>
@@ -132,20 +130,10 @@
             <div class="col-12 col-lg-6 add_to_cart_block">
                 <div class="card bg-light mb-3">
                     <div class="card-body">
-                        <p class="price">99.00 $</p>
-                        <p class="price_discounted">149.90 $</p>
+                        <p class="price">639 €</p>
                         <form method="get" action="cart.html">
                             <div class="form-group">
-                                <label for="colors">Color</label>
-                                <select class="custom-select" id="colors">
-                                    <option selected>Select</option>
-                                    <option value="1">Blue</option>
-                                    <option value="2">Red</option>
-                                    <option value="3">Green</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Quantity :</label>
+                                <label>Cantidad:</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
@@ -161,25 +149,33 @@
                                 </div>
                             </div>
                             <a href="cart.html" class="btn btn-primary btn-lg btn-block text-uppercase">
-                                <i class="fa fa-shopping-cart"></i> Add To Cart
+                                <i class="fa fa-shopping-cart"></i> Añadir al carro
                             </a>
                         </form>
                         <div class="product_rassurance">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><i class="fa fa-truck fa-2x"></i><br/>Fast delivery</li>
-                                <li class="list-inline-item"><i class="fa fa-credit-card fa-2x"></i><br/>Secure payment</li>
-                                <li class="list-inline-item"><i class="fa fa-phone fa-2x"></i><br/>+33 1 22 54 65 60</li>
+                                <li class="list-inline-item"><i class="fa fa-truck fa-2x"></i><br/>Entrega Rápida</li>
+                                <li class="list-inline-item"><i class="fa fa-credit-card fa-2x"></i><br/>Pago Seguro</li>
+                                <li class="list-inline-item"><i class="fa fa-phone fa-2x"></i><br/>+34 1 22 54 65 60</li>
                             </ul>
                         </div>
                         <div class="reviews_product p-3 mb-2 ">
-                            3 reviews
+                            3 reseñas
                             <i class="fa fa-star text-warning"></i>
                             <i class="fa fa-star text-warning"></i>
                             <i class="fa fa-star text-warning"></i>
                             <i class="fa fa-star text-warning"></i>
                             <i class="fa fa-star text-secondary"></i>
                             (4/5)
-                            <a class="pull-right" href="#reviews">View all reviews</a>
+                        </div>
+                        <!-- Alert -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-danger alert-dismissable">
+                                    <h4>
+                                        Información!
+                                    </h4> <strong>Atención!</strong> En caso de no haber disponibilidad del producto nos pondremos en contacto con usted
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -337,7 +333,7 @@
                 <div class="card align-items-center">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                    <img src="img/tablaservir.jpg" class="card-img-top"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -348,17 +344,17 @@
                   <div class="card-body text-center">
                     <!-- Category & Title -->
                     <a href="" class="grey-text">
-                      <h6>Shirt</h6>
+                      <h6>Tabla Servir</h6>
                     </a>
                     <h5 class="mb-3">
                       <strong>
-                        <a href="" class="dark-grey-text">Denim shirt
-                          <span class="badge badge-pill danger-color">NEW</span>
+                        <a href="" class="dark-grey-text">Ledy
+                          <span class="badge badge-warning">MÁS VENDIDO</span>
                         </a>
                       </strong>
                     </h5>
                     <h5 class="font-weight-bold blue-text mb-0">
-                      <strong>120$</strong>
+                      <strong>18 €</strong>
                     </h5>
                   </div>
                   <!-- Card content -->
@@ -373,7 +369,7 @@
                 <div class="card align-items-center">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="card-img-top"
+                    <img src="img/muebleTV.jpg" class="card-img-top"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -384,15 +380,15 @@
                   <div class="card-body text-center">
                     <!-- Category & Title -->
                     <a href="" class="grey-text">
-                      <h6>Sport wear</h6>
+                      <h6>Mueble TV</h6>
                     </a>
                     <h5 class="mb-3">
                       <strong>
-                        <a href="" class="dark-grey-text">Sweatshirt</a>
+                        <a href="" class="dark-grey-text">KEsia 162 x 58 cm</a>
                       </strong>
                     </h5>
                     <h5 class="font-weight-bold blue-text mb-0">
-                      <strong>139$</strong>
+                      <strong>639 €</strong>
                     </h5>
                   </div>
                   <!-- Card content -->
@@ -407,7 +403,7 @@
                 <div class="card align-items-center">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" class="card-img-top"
+                    <img src="img/perchero.jpg" class="card-img-top"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -418,17 +414,15 @@
                   <div class="card-body text-center">
                     <!-- Category & Title -->
                     <a href="" class="grey-text">
-                      <h6>Sport wear</h6>
+                      <h6>Perchero</h6>
                     </a>
                     <h5 class="mb-3">
                       <strong>
-                        <a href="" class="dark-grey-text">Grey blouse
-                          <span class="badge badge-pill primary-color">BEST</span>
-                        </a>
+                        <a href="" class="dark-grey-text">Nostalgic 76 x 191 cm</a>
                       </strong>
                     </h5>
                     <h5 class="font-weight-bold blue-text mb-0">
-                      <strong>99$</strong>
+                      <strong>296 €</strong>
                     </h5>
                   </div>
                   <!-- Card content -->
@@ -443,7 +437,7 @@
                 <div class="card align-items-center">
                   <!-- Card image -->
                   <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top"
+                    <img src="img/espejo.jpg" class="card-img-top"
                       alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
@@ -454,15 +448,15 @@
                   <div class="card-body text-center">
                     <!-- Category & Title -->
                     <a href="" class="grey-text">
-                      <h6>Outwear</h6>
+                      <h6>Espejo</h6>
                     </a>
                     <h5 class="mb-3">
                       <strong>
-                        <a href="" class="dark-grey-text">Black jacket</a>
+                        <a href="" class="dark-grey-text">Cheryl 33 x 159 cm</a>
                       </strong>
                     </h5>
                     <h5 class="font-weight-bold blue-text mb-0">
-                      <strong>219$</strong>
+                      <strong>117 €</strong>
                     </h5>
                   </div>
                   <!-- Card content -->
@@ -491,20 +485,19 @@
               <!-- Grid row -->
               <div class="row">
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 border-right">
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
                   <!-- Content -->
                   <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-                  <p>Here you can use rows and columns to organize your footer content.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
-                    esse
-                    quasi, veritatis totam voluptas nostrum.</p>
+                  <p>Los muebles y artículos de decoración de Anthony's están diseñados cuidando todos los detalles para crear un mejor día a día para la mayoría de las personas. 
+                      En Anthony's encontrarás todo lo que tu hogar necesita: muebles, sofás, electrodomésticos, armarios roperos, artículos de decoración, estanterías metálicas y 
+                      todo en iluminación para que consigas crear ambientes cálidos y relajantes en tu hogar.</p>
                 </div>
                 <!-- Grid column -->
                 <hr class="clearfix w-100 d-md-none">
                 <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1 border-right">
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
                   <!-- Links -->
-                  <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+                  <h5 class="font-weight-bold text-uppercase mb-4">Sobre Nosotros</h5>
                   <ul class="list-unstyled">
                     <li>
                       <p>
@@ -531,13 +524,13 @@
                 <!-- Grid column -->
                 <hr class="clearfix w-100 d-md-none">
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 border-right">
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
                   <!-- Contact details -->
-                  <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+                  <h5 class="font-weight-bold text-uppercase mb-4">Dirección</h5>
                   <ul class="list-unstyled">
                     <li>
                       <p>
-                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <i class="fas fa-home mr-3"></i> Sevilla, 41001, ES</p>
                     </li>
                     <li>
                       <p>
@@ -545,36 +538,32 @@
                     </li>
                     <li>
                       <p>
-                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <i class="fas fa-phone mr-3"></i> + 34 234 567 88</p>
                     </li>
                     <li>
                       <p>
-                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        <i class="fas fa-print mr-3"></i> + 34 234 567 89</p>
                     </li>
                   </ul>
                 </div>
                 <!-- Grid column -->
                 <hr class="clearfix w-100 d-md-none">
                 <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 text-center mx-auto my-4 border-right">
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
                   <!-- Social buttons -->
-                  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+                  <h5 class="font-weight-bold text-uppercase mb-4">Siguenos</h5>
           
                   <!-- Facebook -->
                   <a type="button" class="btn-floating btn-fb">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f text-dark"></i>
                   </a>
                   <!-- Twitter -->
                   <a type="button" class="btn-floating btn-tw">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter text-dark"></i>
                   </a>
-                  <!-- Google +-->
-                  <a type="button" class="btn-floating btn-gplus">
-                    <i class="fab fa-google-plus-g"></i>
-                  </a>
-                  <!-- Dribbble -->
-                  <a type="button" class="btn-floating btn-dribbble">
-                    <i class="fab fa-dribbble"></i>
+                  <!-- Instagram -->
+                  <a href="button" class="btn-floating btn-instagram">
+                      <i class="fab fa-instagram text-dark"></i>
                   </a>
                 </div>
                 <!-- Grid column -->
@@ -582,11 +571,6 @@
               <!-- Grid row -->
             </div>
             <!-- Footer Links -->
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-              <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
           </footer>
           <!-- Footer -->
 
