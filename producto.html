@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto 2º Trimestre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top d-flex">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/home.svg" width="30" height="30" class="d-inline-block align-top" alt="inicio">
+          Anthony's
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mr-auto" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active mr-4 ml-4">
+                <a class="nav-link dropdown-toggle" href="#" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Productos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">vhuk</a>
+                  <a class="dropdown-item" href="#">Another</a>
+                  <a class="dropdown-item" href="#">Something</a>
+                </div>
+              </li>
+              <li class="nav-item mr-4 ml-4">
+                <a class="nav-link" href="#">Estancias</a>
+              </li>
+              <li class="nav-item mr-4 ml-4">
+                <a class="nav-link" href="#">Novedades</a>
+              </li>
+              <li class="nav-item mr-4 ml-4">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Inspiración</a>
+              </li>
+              <li class="nav-item dropdown mr-4 ml-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ofertas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <a class="mr-4" href="logIn.html">
+              <img src="img/user-solid.svg" width="20" height="20" class="d-inline-block align-top" alt="log-in" data-toggle="tooltip" data-placement="bottom" title="LogIn">
+            </a>
+            <a class="mr-4" href="shoppingCart.html">
+              <img src="img/shopping-cart-solid.svg" width="20" height="20" class="d-inline-block align-top" alt="carrito-compra" data-toggle="tooltip" data-placement="bottom" title="Carrito de la compra">
+            </a>
+            <form class="form-inline my-md-2 my-lg-0 xs-justify-content-center">
+              <input class="form-control mr-sm-2 mr-md-3" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+      </nav>
+    <div class="container mt-5 pt-3">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Category</a></li>
+                        <li class="breadcrumb-item"><a href="#">Productos</a></li>
+                        <li class="breadcrumb-item"><a href="#">Muebles TV</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Kesia</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Image -->
+            <div class="row mt-4 mb-4">
+                <div class="col-lg-1 text-center">
+                    <ul class="nav nav-tabs row text-center pro-details" id="myTab" role="tablist">
+                        <li class="nav-item col-lg-12 mb-2">
+                            <img class="img-fluid active h-100" src="img/muebleTV2.jpg" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" />
+                        </li>
+                        <li class="nav-item col-lg-12 mb-2">
+                            <div style="height:50px">
+                                <img class="img-fluid h-100" src="img/muebleTV3.jpg" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"/>
+                            </div>
+                        </li>
+                        <li class="nav-item col-lg-12 mb-2">
+                            <img class="img-fluid h-100" src="img/muebleTV4.jpg" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false"/>
+                        </li>
+                        <li class="nav-item col-lg-12 mb-2">
+                            <img class="img-fluid h-100" src="img/muebleTV5.jpg" id="productTwo-tab" data-toggle="tab" href="#productTwo" role="tab" aria-controls="productTwo" aria-selected="false"/>
+                        </li>
+                        <li class="nav-item col-lg-12 mb-2">
+                            <img class="img-fluid h-100" src="img/muebleTV6.jpg" id="productThree-tab" data-toggle="tab" href="#productThree" role="tab" aria-controls="productThree" aria-selected="false"/>
+                        </li>
+                        <li class="nav-item col-lg-12 mb-2">
+                            <img class="img-fluid h-100" src="img/muebleTV7.jpg" id="productFour-tab" data-toggle="tab" href="#productFour" role="tab" aria-controls="productFour" aria-selected="false"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center border-right d-none d-md-block mb-5">
+                    <div class="tab-content row h-100 d-flex justify-content-center align-items-center" id="myTabContent">
+                        <div class="tab-pane fade show active col-lg-12" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <img class="img-fluid" src="img/muebleTV2.jpg" />
+                        </div>
+                        <div class="tab-pane fade col-lg-12" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <img class="img-fluid" src="img/muebleTV3.jpg" />
+                        </div>
+                        <div class="tab-pane fade col-lg-12" id="product" role="tabpanel" aria-labelledby="product-tab">
+                            <img class="img-fluid" src="img/muebleTV4.jpg" />
+                        </div>
+                        <div class="tab-pane fade col-lg-12" id="productTwo" role="tabpanel" aria-labelledby="productTwo-tab">
+                            <img class="img-fluid" src="img/muebleTV5.jpg" />
+                        </div>
+                        <div class="tab-pane fade col-lg-12" id="productThree" role="tabpanel" aria-labelledby="productThree-tab">
+                            <img class="img-fluid" src="img/muebleTV6.jpg" />
+                        </div>
+                        <div class="tab-pane fade col-lg-12" id="productFour" role="tabpanel" aria-labelledby="productFour-tab">
+                            <img class="img-fluid" src="img/muebleTV7.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Add to cart -->
+            <div class="col-12 col-lg-6 add_to_cart_block">
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p class="price">99.00 $</p>
+                        <p class="price_discounted">149.90 $</p>
+                        <form method="get" action="cart.html">
+                            <div class="form-group">
+                                <label for="colors">Color</label>
+                                <select class="custom-select" id="colors">
+                                    <option selected>Select</option>
+                                    <option value="1">Blue</option>
+                                    <option value="2">Red</option>
+                                    <option value="3">Green</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Quantity :</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control"  id="quantity" name="quantity" min="1" max="100" value="1">
+                                    <div class="input-group-append">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="cart.html" class="btn btn-primary btn-lg btn-block text-uppercase">
+                                <i class="fa fa-shopping-cart"></i> Add To Cart
+                            </a>
+                        </form>
+                        <div class="product_rassurance">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-truck fa-2x"></i><br/>Fast delivery</li>
+                                <li class="list-inline-item"><i class="fa fa-credit-card fa-2x"></i><br/>Secure payment</li>
+                                <li class="list-inline-item"><i class="fa fa-phone fa-2x"></i><br/>+33 1 22 54 65 60</li>
+                            </ul>
+                        </div>
+                        <div class="reviews_product p-3 mb-2 ">
+                            3 reviews
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-secondary"></i>
+                            (4/5)
+                            <a class="pull-right" href="#reviews">View all reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    
+        <div class="row mb-5">
+            <!-- Descripcion -->
+            <div class="col-12">
+                <div id="MainMenu">
+                    <div class="list-group panel">
+                        <a href="#descripcion" class="list-group-item bg-primary text-light" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-align-justify"></i> Descripción</a>
+                        <div class="collapse" id="descripcion">
+                            <p class="card-text mt-3">
+                                Mueble Tv con estructura en DM lacado grafito mate. Frontal con 2 puertas correderas en chapa de nogal. Pies de metal.
+                            </p>
+                            <p class="card-text mb-3">
+                                Líneas depuradas, limpias y rectas junto con el contraste del color grafito mate de la estructura de esta pieza con los frontales en nogal dan forma a este mueble de tv. 
+                                Con un carácter indiscutible, este es un diseño con mucha fuerza que aúna sencillez y modernidad que, sin duda, llamará la atención de todos tus invitados. Además, el cuidado 
+                                de cada pequeño detalle y sus acabados denotan elegancia. ¡Una pieza perfecta para casas únicas! 
+                            </p>
+                        </div>
+                        <!-- Comentarios -->
+                        <a href="#comentarios" class="list-group-item bg-primary text-light" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-comment"></i> Comentarios <span class="badge badge-light">3</span></a>
+                        <div class="collapse" id="comentarios">
+                            <div class="col-12" id="reviews">
+                                <div class="card border-light mb-3">
+                                            <div class="card-body">
+                                                <div class="review">
+                                                    <ul class="list-unstyled">
+                                                        <li class="media">
+                                                        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/avatar-min1.jpg" alt="Generic placeholder image">
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0 mb-2 font-weight-bold">Anna Smith</h5>
+                                                            <!--Review-->
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                                                            odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                            Donec lacinia congue felis in faucibus.</p>
+                                                        </div>
+                                                        </li>
+                                                        <li class="media my-4">
+                                                        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/avatar-min2.jpg" alt="Generic placeholder image">
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0 mb-2 font-weight-bold">Tom Brown</h5>
+                                                            <!--Review-->
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-secondary"> </i>
+                                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                                                            odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                            Donec lacinia congue felis in faucibus.</p>
+                                                        </div>
+                                                        </li>
+                                                        <li class="media">
+                                                        <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/avatar-min3.jpg" alt="Generic placeholder image">
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0 mb-2 font-weight-bold">Natalie Doe</h5>
+                                                            <!--Review-->
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-warning"> </i>
+                                                            <i class="fas fa-star text-secondary"> </i>
+                                                            <i class="fas fa-star text-secondary"> </i>
+                                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                                                            odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                            Donec lacinia congue felis in faucibus.</p>
+                                                        </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#detalles" class="list-group-item bg-primary text-light" data-toggle="collapse" data-parent="#MainMenu"><i class="fas fa-file"></i> Detalles</a>
+                                <div class="collapse" id="detalles">
+                                    <div class="table-responsive text-nowrap mt-3 ml-3">
+
+                                        <table class="table">
+                                            <thead>
+                                                <h3>Paquete</h3>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Numero de paquetes</th>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Dimensiones</th>
+                                                    <td>Altura:58,00 Anchura:61,50 Longitud:172,00 Peso:51,00Kg</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table class="table">
+                                            <thead>
+                                                <h3>Dimensiones</h3>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Alto (cm)</th>
+                                                    <td>58</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Ancho (cm)</th>
+                                                    <td>162</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Fondo (cm)</th>
+                                                    <td>45</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Peso del producto</th>
+                                                    <td>51,00 Kg</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Altura del pie - del sobre al suelo (cm)</th>
+                                                    <td>19</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Altura del interior del estante (cm)</th>
+                                                    <td>35</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Ancho del interior del estante (cm)</th>
+                                                    <td>51</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Fondo del interior del estante (cm)</th>
+                                                    <td>39</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                </div>
+                                <!--Section: Content-->
+        <section class="dark-grey-text text-center mt-5 pt-5">
+          
+            <!-- Section heading -->
+            <h3 class="font-weight-bold mb-4 pb-2">Búsquedas recientes</h3>      
+              <!-- Grid row -->
+            <div class="row">
+        
+              <!-- Grid column -->
+              <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                <!-- Card -->
+                <div class="card align-items-center">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                      alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!-- Card image -->
+                  <!-- Card content -->
+                  <div class="card-body text-center">
+                    <!-- Category & Title -->
+                    <a href="" class="grey-text">
+                      <h6>Shirt</h6>
+                    </a>
+                    <h5 class="mb-3">
+                      <strong>
+                        <a href="" class="dark-grey-text">Denim shirt
+                          <span class="badge badge-pill danger-color">NEW</span>
+                        </a>
+                      </strong>
+                    </h5>
+                    <h5 class="font-weight-bold blue-text mb-0">
+                      <strong>120$</strong>
+                    </h5>
+                  </div>
+                  <!-- Card content -->
+                </div>
+                <!-- Card -->
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                <!-- Card -->
+                <div class="card align-items-center">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="card-img-top"
+                      alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!-- Card image -->
+                  <!-- Card content -->
+                  <div class="card-body text-center">
+                    <!-- Category & Title -->
+                    <a href="" class="grey-text">
+                      <h6>Sport wear</h6>
+                    </a>
+                    <h5 class="mb-3">
+                      <strong>
+                        <a href="" class="dark-grey-text">Sweatshirt</a>
+                      </strong>
+                    </h5>
+                    <h5 class="font-weight-bold blue-text mb-0">
+                      <strong>139$</strong>
+                    </h5>
+                  </div>
+                  <!-- Card content -->
+                </div>
+                <!-- Card -->
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                <!-- Card -->
+                <div class="card align-items-center">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" class="card-img-top"
+                      alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!-- Card image -->
+                  <!-- Card content -->
+                  <div class="card-body text-center">
+                    <!-- Category & Title -->
+                    <a href="" class="grey-text">
+                      <h6>Sport wear</h6>
+                    </a>
+                    <h5 class="mb-3">
+                      <strong>
+                        <a href="" class="dark-grey-text">Grey blouse
+                          <span class="badge badge-pill primary-color">BEST</span>
+                        </a>
+                      </strong>
+                    </h5>
+                    <h5 class="font-weight-bold blue-text mb-0">
+                      <strong>99$</strong>
+                    </h5>
+                  </div>
+                  <!-- Card content -->
+                </div>
+                <!-- Card -->
+              </div>
+              <!-- Grid column -->
+        
+              <!-- Grid column -->
+              <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+                <!-- Card -->
+                <div class="card align-items-center">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top"
+                      alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!-- Card image -->
+                  <!-- Card content -->
+                  <div class="card-body text-center">
+                    <!-- Category & Title -->
+                    <a href="" class="grey-text">
+                      <h6>Outwear</h6>
+                    </a>
+                    <h5 class="mb-3">
+                      <strong>
+                        <a href="" class="dark-grey-text">Black jacket</a>
+                      </strong>
+                    </h5>
+                    <h5 class="font-weight-bold blue-text mb-0">
+                      <strong>219$</strong>
+                    </h5>
+                  </div>
+                  <!-- Card content -->
+                </div>
+                <!-- Card -->
+              </div>
+              <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row -->
+        
+          </section>
+          <!--Section: Content-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color lighten-3 pt-4 border-top">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1 border-right">
+                  <!-- Content -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+                  <p>Here you can use rows and columns to organize your footer content.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+                    esse
+                    quasi, veritatis totam voluptas nostrum.</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1 border-right">
+                  <!-- Links -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <a href="#!">PROJECTS</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="#!">ABOUT US</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="#!">BLOG</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="#!">AWARDS</a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 border-right">
+                  <!-- Contact details -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4 border-right">
+                  <!-- Social buttons -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+          
+                  <!-- Facebook -->
+                  <a type="button" class="btn-floating btn-fb">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <!-- Google +-->
+                  <a type="button" class="btn-floating btn-gplus">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn-floating btn-dribbble">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+</body>
+</html>
